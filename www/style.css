@@ -1,0 +1,23 @@
+html {
+    background-color: black;
+    padding: 1vmax;
+}
+
+@media (max-width: 1000px){
+    html {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.tile {
+    background: rgb(186, 211, 138);
+}
+
+nav {
+
+}
