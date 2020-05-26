@@ -1,23 +1,32 @@
-html {
-    background-color: black;
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 
+        'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   background-color: black;
     padding: 1vmax;
 }
 
-@media (max-width: 1000px){
-    html {
-        padding: 0;
-        margin: 0;
-    }
-}
-
-body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-}
-
 .tile {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+header, footer {
+    background-color: rgb(193, 118, 255);
+}
+
+main, nav {
     background: rgb(186, 211, 138);
 }
 
-nav {
+header * {
+    text-align: center;
+}
 
+#profile-link img {
+    height: 15px;
+}
+
+#profile-link a {
+    color: black;
 }
