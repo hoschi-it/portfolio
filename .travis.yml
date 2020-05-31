@@ -1,9 +1,8 @@
-language: sass
+language: node_js
 
 before_install:
   - sudo apt update
-  - sudo apt install ruby-dev
-  - gem install sass
+  - npm install -g sass
 
 after_install:
 - chmod +x deploy.sh
