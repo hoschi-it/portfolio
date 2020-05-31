@@ -21,7 +21,9 @@ a {
   color: $frame-color;
 }
 
-
+a:hover {
+  color: $sec-color;
+}
 
 
 /********** navigation bar ****************************/
@@ -78,6 +80,10 @@ main > section:nth-child(even){
     color: $light-color;
   }
 
+  a:hover {
+    color: $sec-color;
+  }
+
   h1, h2, h3, h4, h5, h6, p, li {
     color: $light-color;
   }
@@ -113,6 +119,10 @@ main > section:nth-child(even){
 
     a#profile-link {
         color: $dark-color;
+    }
+
+    a#profile-link:hover {
+      color:$prim-color;
     }
 }
 
