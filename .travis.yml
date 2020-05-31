@@ -1,6 +1,7 @@
 language: sass
 
 before_install:
+  - sudo apt update
   - sudo apt install ruby-dev
   - gem install sass
 
