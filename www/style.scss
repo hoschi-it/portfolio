@@ -14,11 +14,11 @@ body {
     max-width: $max-frame-width;
     padding: 0px 0px 0px 0px;
     margin: 0 auto;
+    font-size: 160%;
 }
 
-nav {
-  padding: $std-whitespace;
-
+a {
+  color: $frame-color;
 }
 
 /********* header ****************************************/
@@ -44,6 +44,7 @@ nav {
     background-color: $sec-color;
     position: sticky;
     top: 0;
+    padding: $std-whitespace;
 
     ul li {
         display: inline;
@@ -53,7 +54,11 @@ nav {
     }
 
     ul li:hover {
-      background-color: $prim-color;
+      background-color: $dark-color;
+
+      a {
+        color: $light-color;
+      }
     }
 }
 
@@ -66,10 +71,10 @@ main > section {
     height: 100vh;
     margin: 0;
     padding: $std-whitespace;
-    padding-top: 10 * $std-whitespace;
+    padding: 10 * $std-whitespace $std-whitespace;
 }
 
-section:nth-child(odd) {
+main > section:nth-child(odd) {
   background-color: $light-color;
 
   a {
@@ -81,7 +86,7 @@ section:nth-child(odd) {
   }
 }
 
-section:nth-child(even){
+main > section:nth-child(even){
   background-color: $dark-color;
 
   a {
