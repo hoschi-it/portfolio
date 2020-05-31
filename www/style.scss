@@ -3,7 +3,7 @@ $sec-color: cornsilk;
 $dark-color: #626262;
 $light-color: white;
 $std-whitespace: 10px;
-$max-frame-width: 800px;
+$max-frame-width: 1000px;
 $frame-color: black;
 
 
@@ -21,21 +21,6 @@ a {
   color: $frame-color;
 }
 
-/********* header ****************************************/
-#welcome-section {
-
-    * {
-      text-align: center;
-    }
-
-    #profile-link img {
-        height: 15px;
-    }
-
-    a#profile-link {
-        color: $dark-color;
-    }
-}
 
 
 
@@ -68,7 +53,7 @@ main {
 }
 
 main > section {
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
     padding: $std-whitespace;
     padding: 10 * $std-whitespace $std-whitespace;
@@ -116,18 +101,44 @@ main > section:nth-child(even){
     */
 }
 
-ul#list-of-projects {
+#welcome-section {
+
+    * {
+      text-align: center;
+    }
+
+    #profile-link img {
+        height: 15px;
+    }
+
+    a#profile-link {
+        color: $dark-color;
+    }
+}
+
+
+section > ul {
   display: flex;
   flex-wrap: wrap;
 
   li {
     display: block;
-    background-color: $frame-color;
     list-style: none;
     padding: $std-whitespace;
     margin: $std-whitespace;
-    width: 300px;
   }
+}
+
+
+ul#list-of-projects li {
+  background-color: $frame-color;
+  width: 300px;
+}
+
+ul#user-stories li {
+  background-color: $dark-color;
+  color: $light-color;
+  width: 300px;
 }
 
 /*************** footer ******************************/
