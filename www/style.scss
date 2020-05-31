@@ -1,21 +1,27 @@
+$prim-color: darkorange;
+$sec-color: cornsilk;
+$dark-color: black;
+$std-padding: 10px;
+$max-frame-width: 800px;
+
 body {
     font-family: "Segoe UI", "Helvetica Neue", Arial,
         freesans, clean, sans-serif;
-    background-color: black;
-    max-width: 1000px;
+    background-color: $dark-color;
+    max-width: $max-frame-width;
     padding: 0px;
     margin: 0px;
 }
 
 .tile,
 main {
-    padding: 10px;
+    padding: $std-padding;
     /*border-radius: 10px;*/
 }
 
 /********* header ****************************************/
 header {
-    background-color: darkorange;
+    background-color: $prim-color;
 }
 
 header * {
@@ -27,7 +33,7 @@ header * {
 }
 
 #profile-link a {
-    color: black;
+    color: $dark-color;
 }
 
 /********** navigation bar ****************************/
@@ -41,7 +47,7 @@ nav ul li {
 }
 
 nav {
-    background-color: cornsilk;
+    background-color: $sec-color;
 }
 
 /***************** main *******************************/
@@ -53,7 +59,7 @@ main>section {
     margin: 2vh;
 }
 
-@media (min-width: 800px) {
+@media (min-width: $max-frame-width) {
     main {
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -64,14 +70,13 @@ main>section {
     #projects {
         grid-row: 1 / -1;
         grid-column: 2;
-        /*border-left: 1px solid black;*/
-        padding-left: 10px;
-        background-color: cornsilk;
+        padding: $std-padding auto;
+        background-color: $sec-color;
     }
 }
 
 /*************** footer ******************************/
 footer {
-    background-color: cornsilk;
-    padding: 10px;
+    background-color: $sec-color;
+    padding: $std-padding;
 }
