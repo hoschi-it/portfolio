@@ -2,7 +2,7 @@ language: generic
 
 before_install:
   - sudo apt update
-  - sudo apt-get -y install node
+  - sudo apt-get -y install nodejs
   - npm install -g sass
   - chmod +x deploy.sh
   - bash deploy.sh
