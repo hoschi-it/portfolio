@@ -15,6 +15,7 @@ body {
     padding: 0px 0px 0px 0px;
     margin: 0 auto;
     font-size: 160%;
+    text-align: center;
 }
 
 a {
@@ -57,9 +58,15 @@ main {
 main > section {
     min-height: 100vh;
     margin: 0;
-    padding: $std-whitespace;
-    padding: 10 * $std-whitespace $std-whitespace;
+    padding: 0; //$std-whitespace;
+/*    padding: 10 * $std-whitespace $std-whitespace;*/
+
+  h1, h2 {
+    padding-top: 10 * $std-whitespace;
+  }
 }
+
+
 
 main > section:nth-child(odd) {
   background-color: $light-color;
@@ -90,7 +97,6 @@ main > section:nth-child(even){
 }
 
 @media (min-width: $max-frame-width) {
-  /*
     main {
         display: grid;
         grid-template-columns: 3fr 2fr;
@@ -103,11 +109,13 @@ main > section:nth-child(even){
         grid-column: 2;
         padding: $std-whitespace;
         border: 5px solid red;
+        min-height: 100vh;
+        height: auto;
     }
-    */
 }
 
 #welcome-section {
+    height: 100vh;
 
     * {
       text-align: center;
