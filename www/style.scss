@@ -1,8 +1,9 @@
 $prim-color: darkorange;
 $sec-color: cornsilk;
 $dark-color: black;
-$std-padding: 10px;
+$std-whitespace: 10px;
 $max-frame-width: 800px;
+
 
 body {
     font-family: "Segoe UI", "Helvetica Neue", Arial,
@@ -15,39 +16,38 @@ body {
 
 .tile,
 main {
-    padding: $std-padding;
-    /*border-radius: 10px;*/
+    padding: $std-whitespace;
 }
 
 /********* header ****************************************/
 header {
     background-color: $prim-color;
+
+    * {
+      text-align: center;
+    }
+
+    #profile-link img {
+        height: 15px;
+    }
+
+    #profile-link a {
+        color: $dark-color;
+    }
 }
 
-header * {
-    text-align: center;
-}
 
-#profile-link img {
-    height: 15px;
-}
-
-#profile-link a {
-    color: $dark-color;
-}
 
 /********** navigation bar ****************************/
-nav {}
-
-nav ul li {
-    display: inline;
-    list-style: none;
-    position: relative;
-    padding-right: 20px;
-}
-
 nav {
     background-color: $sec-color;
+
+    ul li {
+        display: inline;
+        list-style: none;
+        position: relative;
+        padding-right: 2 * $std-whitespace;
+    }
 }
 
 /***************** main *******************************/
@@ -70,7 +70,7 @@ main>section {
     #projects {
         grid-row: 1 / -1;
         grid-column: 2;
-        padding: $std-padding auto;
+        padding: $std-whitespace auto;
         background-color: $sec-color;
     }
 }
@@ -78,5 +78,5 @@ main>section {
 /*************** footer ******************************/
 footer {
     background-color: $sec-color;
-    padding: $std-padding;
+    padding: $std-whitespace;
 }
