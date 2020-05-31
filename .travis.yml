@@ -1,12 +1,10 @@
 language: node_js
 
 before_install:
-  - sudo apt update
   - npm install -g sass
-
-after_install:
-- chmod +x deploy.sh
-- ./deploy.sh
+script:
+  - chmod +x deploy.sh
+  - ./deploy.sh
 
 deploy:
   provider: pages
