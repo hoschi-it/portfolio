@@ -1,28 +1,28 @@
 $prim-color: darkorange;
 $sec-color: cornsilk;
-$dark-color: black;
+$dark-color: #626262;
+$light-color: white;
 $std-whitespace: 10px;
 $max-frame-width: 800px;
+$frame-color: black;
 
 
 body {
     font-family: "Segoe UI", "Helvetica Neue", Arial,
         freesans, clean, sans-serif;
-    background-color: $dark-color;
+    background-color: $frame-color;
     max-width: $max-frame-width;
-    padding: 0px;
+    padding: 0px 0px 0px 0px;
     margin: 0 auto;
 }
 
-header,
-nav,
-main {
-    padding: $std-whitespace;
+nav {
+  padding: $std-whitespace;
+
 }
 
 /********* header ****************************************/
-header {
-    background-color: $prim-color;
+#welcome-section {
 
     * {
       text-align: center;
@@ -32,7 +32,7 @@ header {
         height: 15px;
     }
 
-    #profile-link a {
+    a#profile-link {
         color: $dark-color;
     }
 }
@@ -63,10 +63,38 @@ main {
 }
 
 main > section {
-    margin: 2vh;
+    height: 100vh;
+    margin: 0;
+    padding: $std-whitespace;
+    padding-top: 10 * $std-whitespace;
+}
+
+section:nth-child(odd) {
+  background-color: $light-color;
+
+  a {
+    color: $dark-color;
+  }
+
+  h1, h2, h3, h4, h5, h6, p, li {
+    color: $dark-color;
+  }
+}
+
+section:nth-child(even){
+  background-color: $dark-color;
+
+  a {
+    color: $light-color;
+  }
+
+  h1, h2, h3, h4, h5, h6, p, li {
+    color: $light-color;
+  }
 }
 
 @media (min-width: $max-frame-width) {
+  /*
     main {
         display: grid;
         grid-template-columns: 3fr 2fr;
@@ -75,11 +103,12 @@ main > section {
     }
 
     #projects {
-        grid-row: 1 / -1;
+        grid-row: 1 / 3;
         grid-column: 2;
         padding: $std-whitespace;
-        background-color: $sec-color;
+        border: 5px solid red;
     }
+    */
 }
 
 /*************** footer ******************************/

@@ -8,18 +8,7 @@
     </head>
 
     <body>
-        <header class="tile">
-            <h1>Hoschi-IT's portfolio</h1>
-            <p id="profile-link">
-                <a href="https://github.com/hoschi-it" target="_blank">
-                    <img id="github-logo" src="./assets/GitHub-Mark-64px.png"
-                      alt="">
-                    find me on Github
-                </a>
-            </p>
-        </header>
-
-        <nav class="tile">
+        <nav id="navbar" class="tile">
             <ul>
                 <li>
                     <a href="#welcome-section">Welcome</a>
@@ -32,17 +21,22 @@
                 </li>
             </ul>
         </nav>
-
         <main>
             <section id="welcome-section">
                 <h1>Welcome</h1>
-                <p>Good to see you! Let me introduce myself.</p>
+                <p>Good to see you! <br />Let me introduce myself.</p>
                 <p> I am Hoschi-IT and Software-Development, especially
                     Web-Development, is a true passion to me. Whenever some idea
                     hits my mind I need to think it through and gather more
                     ideas how to solve that specific problem. And nowadays,
                     there are so many problems to tackle with technology.
                 </p>
+                <a id="profile-link" href="https://github.com/hoschi-it"
+                  target="_blank">
+                    <img id="github-logo" src="./assets/GitHub-Mark-64px.png"
+                      alt="">
+                    find me on Github
+                </a>
             </section>
             <section id="projects">
                 <h2>Projects</h2>
@@ -65,45 +59,49 @@
                             challenge</a></li>
                 </ul>
             </section>
-            <section>
-                <h2 id="challenge" order="1">The challenge</h2>
+            <section id="challenge">
+                <h2 order="1">The challenge</h2>
                 <p>This webpage has been developed for a coding challenge
                     mainly. God
                     online knows if it will stay that way.</p>
-                <section>
-                    <h3>The Requirements</h3>
-                    <ul>
-                        <li>Develop a portfolio page for yourself, using
-                            only
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>(Vanilla JavaScript)</li>
-                                <li>and maybe some SASS</li>
-                            </ul>
-                        </li>
-                        <li>Create a html5 structure that includes at least
-                            <code>header</code>, <code>nav</code>,
-                            <code>main</code>
-                            and <code>footer</code>.
-                        </li>
-                        <li>Make the page responsive through at least one
-                            media
-                            query in CSS.
-                        </li>
-                        <li>Link your (Github) profile for opening in a new
-                            tab.
-                        </li>
-                        <li>Create a "Welcome" section</li>
-                        <li>Create a "Projects" section</li>
-                        <li>Link section titles in the nav</li>
-                    </ul>
-                </section>
+
+                <h3>The Requirements</h3>
+                <ul>
+                    <li>Develop a portfolio page for yourself, using
+                        only
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>(Vanilla JavaScript)</li>
+                            <li>and maybe some SASS</li>
+                        </ul>
+                    </li>
+                    <li>Create a html5 structure that includes at least
+                        <code>header</code>, <code>nav</code>,
+                        <code>main</code>
+                        and <code>footer</code>.
+                    </li>
+                    <li>Make the page responsive through at least one
+                        media
+                        query in CSS.
+                    </li>
+                    <li>Link your (Github) profile for opening in a new
+                        tab.
+                    </li>
+                    <li>Create a "Welcome" section</li>
+                    <li>Create a "Projects" section</li>
+                    <li>Link section titles in the nav</li>
+                </ul>
+
             </section>
         </main>
         <footer>
             Feel free to build a page for that challenge yourself!
         </footer>
+        <!-- script
+          src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+            // run unit tests for all requirements from freecodecamp
+        </script-->
     </body>
 
 </html>
