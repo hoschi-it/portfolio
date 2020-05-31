@@ -1,26 +1,21 @@
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-        'Lucida Sans', Arial, sans-serif;
+    font-family: "Segoe UI", "Helvetica Neue", Arial,
+        freesans, clean, sans-serif;
     background-color: black;
-    padding: 1vmax;
+    max-width: 1000px;
+    padding: 0px;
+    margin: 0px;
 }
 
-.tile, section {
+.tile,
+main {
     padding: 10px;
-    margin: 5px;
-    border-radius: 10px;
+    /*border-radius: 10px;*/
 }
 
+/********* header ****************************************/
 header {
     background-color: darkorange;
-}
-
-nav, footer {
-    background-color: cornsilk;
-}
-
-section {
-    background: white;
 }
 
 header * {
@@ -35,22 +30,48 @@ header * {
     color: black;
 }
 
-#welcome-section {}
+/********** navigation bar ****************************/
+nav {}
 
-#projects {}
-
-#challenge {
-    /*  grid-row: 2 / 4;*/
-    grid-row: 2;
-    grid-column: 2;
+nav ul li {
+    display: inline;
+    list-style: none;
+    position: relative;
+    padding-right: 20px;
 }
 
-#about {
-    /*    grid-row: 1 / 2;
-    grid-column: 1 / 2;*/
+nav {
+    background-color: cornsilk;
 }
 
+/***************** main *******************************/
 main {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr)
+    background: white;
+}
+
+main>section {
+    margin: 2vh;
+}
+
+@media (min-width: 800px) {
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: repeat(2, min-content);
+        flex-direction: row;
+    }
+
+    #projects {
+        grid-row: 1 / -1;
+        grid-column: 2;
+        /*border-left: 1px solid black;*/
+        padding-left: 10px;
+        background-color: cornsilk;
+    }
+}
+
+/*************** footer ******************************/
+footer {
+    background-color: cornsilk;
+    padding: 10px;
 }
