@@ -11,7 +11,7 @@ body {
     background-color: $dark-color;
     max-width: $max-frame-width;
     padding: 0px;
-    margin: 0px;
+    margin: 0 auto;
 }
 
 .tile,
@@ -55,7 +55,7 @@ main {
     background: white;
 }
 
-main>section {
+main > section {
     margin: 2vh;
 }
 
