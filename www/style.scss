@@ -116,6 +116,20 @@ main > section:nth-child(even){
     */
 }
 
+ul#list-of-projects {
+  display: flex;
+  flex-wrap: wrap;
+
+  li {
+    display: block;
+    background-color: $frame-color;
+    list-style: none;
+    padding: $std-whitespace;
+    margin: $std-whitespace;
+    width: 300px;
+  }
+}
+
 /*************** footer ******************************/
 footer {
     background-color: $sec-color;
