@@ -14,7 +14,8 @@ body {
     margin: 0 auto;
 }
 
-.tile,
+header,
+nav,
 main {
     padding: $std-whitespace;
 }
@@ -41,12 +42,18 @@ header {
 /********** navigation bar ****************************/
 nav {
     background-color: $sec-color;
+    position: sticky;
+    top: 0;
 
     ul li {
         display: inline;
         list-style: none;
-        position: relative;
-        padding-right: 2 * $std-whitespace;
+        padding: $std-whitespace;
+        /*padding-right: 2 * $std-whitespace;*/
+    }
+
+    ul li:hover {
+      background-color: $prim-color;
     }
 }
 
@@ -62,7 +69,7 @@ main > section {
 @media (min-width: $max-frame-width) {
     main {
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 3fr 2fr;
         grid-template-rows: repeat(2, min-content);
         flex-direction: row;
     }
@@ -70,7 +77,7 @@ main > section {
     #projects {
         grid-row: 1 / -1;
         grid-column: 2;
-        padding: $std-whitespace auto;
+        padding: $std-whitespace;
         background-color: $sec-color;
     }
 }
