@@ -1,0 +1,166 @@
+$prim-color: darkorange;
+$sec-color: cornsilk;
+$dark-color: #626262;
+$light-color: white;
+$std-whitespace: 10px;
+$max-frame-width: 10000px;
+$frame-color: black;
+
+
+body {
+    font-family: "Segoe UI", "Helvetica Neue", Arial,
+        freesans, clean, sans-serif;
+    background-color: $frame-color;
+    max-width: $max-frame-width;
+    padding: 0px 0px 0px 0px;
+    margin: 0 auto;
+    font-size: 160%;
+    text-align: center;
+}
+
+a {
+  color: $frame-color;
+}
+
+a:hover {
+  color: $sec-color;
+}
+
+
+/********** navigation bar ****************************/
+nav {
+    background-color: $sec-color;
+    position: sticky;
+    top: 0;
+    padding: $std-whitespace;
+
+    ul li {
+        display: inline;
+        list-style: none;
+        padding: $std-whitespace;
+        /*padding-right: 2 * $std-whitespace;*/
+    }
+
+    ul li:hover {
+      background-color: $dark-color;
+
+      a {
+        color: $light-color;
+      }
+    }
+}
+
+/***************** main *******************************/
+main {
+    background: white;
+}
+
+main > section {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0; //$std-whitespace;
+/*    padding: 10 * $std-whitespace $std-whitespace;*/
+
+  h1, h2 {
+    padding-top: 10 * $std-whitespace;
+  }
+}
+
+
+
+main > section:nth-child(odd) {
+  background-color: $light-color;
+
+  a {
+    color: $dark-color;
+  }
+
+  h1, h2, h3, h4, h5, h6, p, li {
+    color: $dark-color;
+  }
+}
+
+main > section:nth-child(even){
+  background-color: $dark-color;
+
+  a {
+    color: $light-color;
+  }
+
+  a:hover {
+    color: $sec-color;
+  }
+
+  h1, h2, h3, h4, h5, h6, p, li {
+    color: $light-color;
+  }
+}
+
+@media (min-width: $max-frame-width) {
+    main {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        grid-template-rows: repeat(2, min-content);
+        flex-direction: row;
+    }
+
+    #projects {
+        grid-row: 1 / 3;
+        grid-column: 2;
+        padding: $std-whitespace;
+        border: 5px solid red;
+        min-height: 100vh;
+        height: auto;
+    }
+}
+
+#welcome-section {
+    height: 100vh;
+
+    * {
+      text-align: center;
+    }
+
+    #profile-link img {
+        height: 15px;
+    }
+
+    a#profile-link {
+        color: $dark-color;
+    }
+
+    a#profile-link:hover {
+      color:$prim-color;
+    }
+}
+
+
+section > ul {
+  display: flex;
+  flex-wrap: wrap;
+
+  li {
+    display: block;
+    list-style: none;
+    padding: $std-whitespace;
+    margin: $std-whitespace;
+  }
+}
+
+
+ul#list-of-projects li {
+  background-color: $frame-color;
+  width: 300px;
+}
+
+ul#user-stories li {
+  background-color: $dark-color;
+  color: $light-color;
+  width: 300px;
+}
+
+/*************** footer ******************************/
+footer {
+    background-color: $sec-color;
+    padding: $std-whitespace;
+}

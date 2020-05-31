@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "hoschi-ITs portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/hoschi-it/portfolio.git"
+  },
+  "author": "hoschi-it",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hoschi-it/portfolio/issues"
+  },
+  "homepage": "https://github.com/hoschi-it/portfolio#readme"
+}
