@@ -2,7 +2,7 @@
 
 This is a portfolio that was created for completing a coding challenge.
 
-[Show the webpage](https://hoschi-it.github.io/portfolio/)
+[Show the webpage](https://hoschi-it.github.io/portfolio/www/)
 
 ## Requirements
 
