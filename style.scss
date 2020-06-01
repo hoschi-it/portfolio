@@ -36,16 +36,15 @@ nav {
     ul li {
         display: inline;
         list-style: none;
-        padding: $std-whitespace;
-        /*padding-right: 2 * $std-whitespace;*/
-    }
 
-    ul li:hover {
-      background-color: $dark-color;
+        a {
+          padding: 2 * $std-whitespace;
+        }
 
-      a {
-        color: $light-color;
-      }
+        a:hover {
+          background-color: $dark-color;
+          color: $light-color;
+        }
     }
 }
 
