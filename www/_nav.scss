@@ -1,0 +1,22 @@
+/********** navigation bar start ****************************/
+nav {
+  background-color: $sec-color;
+  position: sticky;
+  top: 0;
+  padding: $std-whitespace;
+
+  ul li {
+    display: inline;
+    list-style: none;
+
+    a {
+      padding: $std-whitespace;
+    }
+
+    a:hover {
+      background-color: $dark-color;
+      color: $light-color;
+    }
+  }
+}
+/********** navigation bar end ****************************/
