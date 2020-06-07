@@ -15,45 +15,11 @@ main > section {
 }
 
 main > section:nth-child(odd) {
-  background-color: $light-color;
-
-  a {
-    color: $dark-color;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  li,
-  p {
-    color: $dark-color;
-  }
+  @include brightTheme
 }
 
 main > section:nth-child(even) {
-  background-color: $dark-color;
-
-  a {
-    color: $light-color;
-  }
-
-  a:hover {
-    color: $sec-color;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  li,
-  p {
-    color: $light-color;
-  }
+  @include darkTheme
 }
 @media (min-width: $max-frame-width) {
   main {
