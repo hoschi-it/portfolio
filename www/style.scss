@@ -5,9 +5,6 @@ $light-color: #FFFFFF;
 $std-whitespace: 10px;
 $max-frame-width: 10000px;
 $frame-color: #000000;
-@function weight($weight-name) {
-  @return 700;
-}
 @mixin brightTheme {
   background-color: $light-color;
 
