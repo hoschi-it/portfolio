@@ -1,44 +1,5 @@
-$prim-color: #FF8C00;
-$sec-color: #FFF8DC;
-$dark-color: #626262;
-$light-color: #FFFFFF;
-$std-whitespace: 10px;
-$max-frame-width: 10000px;
-$frame-color: #000000;
-@mixin brightTheme {
-  background-color: $light-color;
-
-  a,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  li,
-  p {
-    color: $dark-color;
-  }
-}
-@mixin darkTheme {
-  background-color: $dark-color;
-
-  a,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  li,
-  p {
-    color: $light-color;
-  }
-
-  a:hover {
-    color: $sec-color;
-  }
-}
+@import './vars';
+@import './mixins';
 
 html {
   scroll-behavior: smooth;

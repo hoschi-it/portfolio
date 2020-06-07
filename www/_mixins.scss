@@ -1,0 +1,34 @@
+@mixin brightTheme {
+  background-color: $light-color;
+
+  a,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  li,
+  p {
+    color: $dark-color;
+  }
+}
+@mixin darkTheme {
+  background-color: $dark-color;
+
+  a,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  li,
+  p {
+    color: $light-color;
+  }
+
+  a:hover {
+    color: $sec-color;
+  }
+}
