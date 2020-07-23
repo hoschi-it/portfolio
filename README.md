@@ -1,3 +1,6 @@
+# This repository moved to gitlab
+https://gitlab.com/hoschi-it/portfolio
+
 # Portfolio
 [![Build Status](https://travis-ci.org/hoschi-it/portfolio.svg?branch=master)](https://travis-ci.org/hoschi-it/portfolio)
 
